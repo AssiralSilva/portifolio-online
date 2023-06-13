@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2? family=Dancing+Script&family=Grape+Nuts&family=Josefin+Sans:wght@200;500&family=Lobster+Two:ital@0;1&family=Montserrat:wght@400;500;600;700;900&500&display=swap');
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
 }
 
-.principal-box {
+button{
+    display: none;
+}
+
+.principal-box{
     height: 80vh;
     width: 100%;
     background-image: url(./assets/Principal-imagem\ teste1.jpg);
@@ -18,7 +21,7 @@
     margin-bottom: 25px;
 }
 
-nav {
+nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -27,56 +30,58 @@ nav {
     padding-top: 1%;
 }
 
-.portifolio {
+.portifolio{
     color: #000000;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 500;
 }
 
-.portifolio span {
+.portifolio span{
     color: #f9004d;
 }
 
-li {
+ul{
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+li{
     color: #ffffff;
     list-style: none;
     display: inline-block;
-    font-size: 38px;
+    font-size: 18px;
     margin-right: 30px;
     cursor: pointer;
 }
 
 a {
     text-decoration: none;
-}
-
-a:visited {
     color: #ffffff;
 }
 
-li:hover a {
+li:hover  a{
     color: #f9004d;
-    transition: 0.5s;
+    transition: 0.8s;
 }
 
-.my-name {
+.my-name{
     position: absolute;
     top: 50%;
     left: 7%;
 }
 
-h1 {
+h1{
     color: #000000;
-    font-size: 100px;
+    font-size: 70px;
 }
 
-h1 span {
-    color: #f9004d;
+h1 span{
+   color: #f9004d;
 }
 
-.my-name h3 {
+.my-name h3{
     color: #000000;
-    font-size: 32px;
+    font-size: 22px;
 }
 
 section {
@@ -92,46 +97,54 @@ section {
     padding-bottom: 0.5%;
 }
 
-video {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 15%;
-}
-
 .titles-projects{
+    font-size: 35px;
+    color: #f9004d;
     display: flex;
     justify-content: center;
     margin-bottom: 5%;
-    font-size: 45px;
-    color: #f9004d;
+    text-align: center;    
+}
+
+video {
+    display: block;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 15%;
 }
 
 .images-projects{
+    width: 80%;
     display: block;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 15%;
+}
+
+#yoga {
+    width: 35%;
+    height: 700px;
 }
 
 footer{
     background-color: #f9004d26;
     margin-right: 10%;
     width: 100%;
-    height: 150px;
-    padding-top: 50px;
+    height: 90px;
+    padding-top: 2em;
 }
 
 .icons {
-    width: 300px;
+    width: 160px;
     display: block;
     margin-right: auto;
     margin-left: auto;
 }
 
 .icons-footer{
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     margin-right: 3.5%;
 }
 
@@ -139,8 +152,146 @@ footer{
     margin-right: 10%;
 }
 
-@media screen and (max-width:1700px) {
+button:focus ~ ul{
+    height: 260px;
+}
+
+@media screen and (max-width:768px) {
+    nav, ul{
+        background-color: #00000023;
+        display: flex;
+        flex-direction: column;
+        align-items: unset; 
+    }
+
+    ul {
+        text-align: center;
+        margin: 0;
+        height: 0;
+    }
+
+    .portifolio{
+        font-size: 35px;
+    }
+
+    button{
+        display: flex;
+        background-color: transparent;
+        border: none;
+        color: #ffffff;
+        font-size: 36px;
+
+        position: absolute;
+        right: 10px;
+        top: 1%;
+    }
+
+    li{
+        height: 28px;
+        font-size: 36px;
+        margin-top: 10px;
+        margin-right: 12px;
+        margin-bottom: 20px;
+    }
+
+    li:hover{
+        background-color: #ffffff33;
+    }
+    ul, li{
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+    
+    .my-name h3 {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 60px 3%;
+    }
+
+    .contacts{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #yoga{
+        height: 450px;
+    }
+}
+
+
+@media screen and (max-width:320px){
+    .portifolio{
+        font-size: 20px;
+    }
+
+    button{
+        font-size: 16px;
+        top: 2.5%;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+
+    .my-name h3{
+        font-size: 10px;
+    }
+
     li {
-        font-size: 25px;
+        height: 20px;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    section{
+        display: block;
+        padding: 60px 3%;
+    }
+
+    section img {
+        height: 200px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 50px;
+    }
+
+    section div h2 {
+        font-size: 20px;
+        width: 100px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    section div p {
+        width:80%;
+        font-size: 14px;
+        text-align:right;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .contacts{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .icons{
+        width: 88px;
+    }
+
+    .icons-footer{
+        width: 20px;
+        height: 20px;
+        margin-right: 4.5%;
     }
 }
