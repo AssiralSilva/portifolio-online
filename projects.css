@@ -17,7 +17,6 @@ button{
     background-size: cover;
     background-position: center;
     background-color: #191919;
-    margin-top: 2.5%;
     margin-bottom: 25px;
 }
 
@@ -99,11 +98,15 @@ section {
 
 .titles-projects{
     font-size: 35px;
-    color: #f9004d;
+    color: #d0b4d1c4;
     display: flex;
     justify-content: center;
     margin-bottom: 5%;
     text-align: center;    
+}
+
+#responsive-projects{
+    color: #f9004d;
 }
 
 video {
@@ -112,6 +115,7 @@ video {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 15%;
+    box-shadow: 20px 9px 1px #001126;
 }
 
 .images-projects{
@@ -121,6 +125,17 @@ video {
     margin-left: auto;
     margin-bottom: 15%;
 }
+/*
+#sweet-menu{
+    margin-bottom: 0;
+}
+*/
+
+#top{
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+}
 
 #yoga {
     width: 35%;
@@ -129,27 +144,31 @@ video {
 
 footer{
     background-color: #f9004d26;
-    margin-right: 10%;
+    /* margin-right: 10%; */
     width: 100%;
-    height: 90px;
     padding-top: 2em;
 }
 
 .icons {
-    width: 160px;
+    width: 121px;
     display: block;
     margin-right: auto;
     margin-left: auto;
 }
 
 .icons-footer{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     margin-right: 3.5%;
 }
 
 #instagram-icon{
     margin-right: 10%;
+}
+
+h6{
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 button:focus ~ ul{
